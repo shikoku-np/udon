@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>うどん遍路 - 四国新聞</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/udon.min.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" property="og:title" content="うどん遍路 - 四国新聞">
+    <meta name="twitter:description" property="og:description" content="">
+    <meta name="twitter:site" content="@UdonHenro">
+    <meta name="twitter:image" property="og:image" content="">   
+
+     <script src="./js/udon.js"></script>
+
+    <!-- Styleguide Only -->
+    <link rel="stylesheet" href="./sg/styles/atom-one-dark.css">
+    <link rel="stylesheet" href="./sg/sg.css">
+    <script src="./sg/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <!-- eof Styleguide Only -->
+
+</head>
+<body>
+
+<section class="global-bar">
+<h1 id="logo"><img src="./img/logo.svg" alt="四国新聞"  role="img" width="186" height="30"></h1>
+<nav class="global-nav" id="global-nav" role="navigation">
+    <ul role="navigation">
+        <li><a href="#">ニュース</a></li>
+         <li><a href="#">スポーツ</a></li>
+         <li><a href="#">天気</a></li>
+         <li><a href="#">求人</a></li>
+         <li><a href="#">就活</a></li>
+         <li><a href="#">防犯</a></li>
+         <li><a href="#">うどん</a></li>
+         <li><a href="#">盆栽</a></li>
+         <li><a href="#">エンタメ</a></li>
+         <li><a href="#">トラベル</a></li>
+         <li><a href="#">買い物</a></li>
+         <li class="responsive-nav"><a href="javascript:void(0);" onclick="globalnav()">&#9776;</a></li>
+    </ul>
+</nav>
+</section>
+
+<div class="container">
+<h1 class="sg-header">うどん遍路スタイルガイド</h1>
+<section class="section sg-section">
+<h2 class="sg-subheader">基本タイポグラフィ</h2>
+<p class="sg-intro">文章を構成するために必要最低限の HTML 要素の使い方。小さなバリエーション以外は、クラス名を記述することなく再現することができます。 </p>
+
+<h3 class="sg-label">ヘッダー</h3>
+<p class="sg-description">うどん遍路では複雑な情報構成を持たせていないことから、ヘッダーのスタイリングは 2 種類だけ用意されています。ヘッダーと他の要素のバランスは CSS で自動的に調整します。</p>
+<h1>うどん遍路</h1>
+<h2>一体車屋と教師とはどっちがえらいだろう</h2>
+<pre><code class="html">&lt;h1&gt;うどん遍路&lt;/h1&gt;
+&lt;h2&gt;一体車屋と教師とはどっちがえらいだろう&lt;/h2&gt;</code></pre>
+
+<h3 class="sg-label">段落</h3>
+<p class="sg-description">段落タグ <code>&lt;p&gt;</code> を付けて記述することで、バランスの整った文章を表示することができます。太字 <code>&lt;strong&gt;</code> を使って強調することもできます。</p>
+<p>どこで生れたかとんと見当けんとうがつかぬ。何でも薄暗いじめじめした所で<strong>ニャーニャー</strong>泣いていた事だけは記憶している。吾輩はここで始めて<a href="www.shikoku-np.co.jp/">人間というものを見た</a>。しかもあとで聞くとそれは書生という人間中で一番獰悪どうあくな種族であったそうだ。この書生というのは時々我々を捕つかまえて煮にて食うという話である。</p>
+<p>吾輩の主人は滅多めったに吾輩と顔を合せる事がない。職業は教師だそうだ。学校から帰ると終日書斎に這入ったぎりほとんど出て来る事がない。家のものは大変な勉強家だと思っている。当人も勉強家であるかのごとく見せている。しかし実際はうちのものがいうような勤勉家ではない。<span class="notes">注釈文</span></p>
+<pre><code class="html">&lt;p&gt;どこで生れたかとんと見当けんとうがつかぬ。何でも薄暗いじめじめした所でニャーニャー...&lt;/p&gt;
+&lt;span class="notes"&gt;注釈文&lt;/span&gt;</code></pre>
+
+<h3 class="sg-label">リスト</h3>
+<p class="sg-description">情報をひとつのグループにまとめて伝えたいときにリストが便利です。「・」でまとめたリスト <code>&lt;ul&gt;</code> だけでなく、番号を使って順番にまとめる <code>&lt;ol&gt;</code> も使えます。<br>
+リストの先頭に記しを付けたくない場合は <code>class="no-list-style</code> を付けます。</p>
+<ul>
+    <li>かけうどん</li>
+    <li>肉ぶっかけうどん</li>
+    <li>しょうゆうどん</li>
+</ul>
+<ol>
+    <li>かけうどん</li>
+    <li>肉ぶっかけうどん</li>
+    <li>しょうゆうどん</li>
+</ol>
+<ul class="no-list-style">
+    <li>かけうどん</li>
+    <li>肉ぶっかけうどん</li>
+    <li>しょうゆうどん</li>
+</ul>
+<pre><code class="html">&lt;ul&gt;
+    &lt;li>かけうどん&lt;/li&gt;
+    ...
+&lt;/ul&gt;
+&lt;ol&gt;
+    &lt;li>かけうどん&lt;/li&gt;
+    ...
+&lt;/ol&gt;
+&lt;ul class="no-list-style"&gt;
+    &lt;li>かけうどん&lt;/li&gt;
+    ...
+&lt;/ul&gt;</code></pre>
+
+<h3 class="sg-label">テーブル</h3>
+<p class="sg-description">情報を表組みにして表現したい場合に使用します。表の見た目は CSS で自動的に調整されます。例えば偶数行で背景色が変わる演出も CSS 側で実装されているので、コードでひとつひとつ設定する必要はありません。<br>
+項目名がある場合は  <code>&lt;td&gt;</code> ではなく、 <code>&lt;th&gt;</code> を推奨します。</p>
+<table class="data-table">
+    <tr>
+        <th>１玉の重さ</th>
+        <td>260グラム</td>
+    </tr>
+    <tr>
+        <th>麺の太さ</th>
+        <td>４ミリ（夏は細目）</td>
+    </tr>
+    <tr>
+        <th>ぬるさ加減</th>
+        <td>可</td>
+    </tr>
+    <tr>
+        <th>しょうゆうどん</th>
+        <td class="is_price">340円</td>
+    </tr>
+</table>
+<pre><code class="html">&lt;table class="data-table"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;１玉の重さ&lt;th&gt;
+        &lt;td&gt;260グラム&lt;td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th&gt;しょうゆうどん&lt;th&gt;
+         &lt;!-- 価格は右寄せ --&gt;
+        &lt;td class="is_price"&gt;340円&lt;td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+</section>
+
+<section class="section sg-section">
+<h2 class="sg-subheader">カラーパレット</h2>
+<p class="sg-intro">うどん遍路では、一貫性のある見た目、うどんをテーマにしたサイトであることを示すために、カラーパレットが指定されています。 SASS ファイルには変数が設定されており、HEX 値などを手動で書くことなく、同じ色が何度も使えるようになっています。</p>
+
+<h3 class="sg-label">$udon</h3>
+<table class="sg-palette">
+    <tr>
+        <td class="sg-udon_darkest">$udon_darkest<br>#5c5c51</td>
+        <td class="sg-udon_darker">$udon_darker<br>#b0aca2</td>
+        <td class="sg-udon_dark">$udon_dark<br>#e2ded0</td>
+        <td class="sg-udon">$udon<br>#FCF7E8</td>
+        <td class="sg-udon_light">$udon_light<br>#fcf9ee</td>
+        <td class="sg-udon_lightest">$udon_lightest<br>#fdfbf5</td>
+    </tr>
+</table>
+<h3 class="sg-label">$shikoku</h3>
+<table class="sg-palette">
+    <tr>
+        <td class="sg-shikoku_darkest">$shikou_darkest<br>#000037</td>
+        <td class="sg-shikoku_darker">$shikou_darker<br>#00006f</td>
+        <td class="sg-shikoku_dark">$shikou_dark<br>#000094</td>
+        <td class="sg-shikoku">$shikou<br>#0000BA</td>
+        <td class="sg-shikoku_light">$shikou_light<br>#6666d5</td>
+        <td class="sg-shikoku_lighter">$shikoku_lighter<br>#b2b2ea</td>
+        <td class="sg-shikoku_lightest">$shikoku_lightest<br>#e5e5f8</td>
+    </tr>
+</table>
+<h3 class="sg-label">$olive</h3>
+<table class="sg-palette">
+    <tr>
+        <td class="sg-olive_darkest">$olive_darkest<br>#22260f</td>
+        <td class="sg-olive_darker">$olive_darker<br>#454c1f</td>
+        <td class="sg-olive_dark">$olive_dark<br>#5c6629</td>
+        <td class="sg-olive">$olive<br>#748034</td>
+        <td class="sg-olive_light">$olive_light<br>#8faf63</td>
+        <td class="sg-olive_lighter">$olive_lighter<br>#b9cd9e</td>
+        <td class="sg-olive_lightest">$olive_lightest<br>#e3ebd8</td>
+    </tr>
+</table>
+<h3 class="sg-label">$keppel</h3>
+<table class="sg-palette">
+    <tr>
+        <td class="sg-keppel_darkest">$keppel_darkest<br>#153d40</td>
+        <td class="sg-keppel_darker">$keppel_darker<br>#205c60</td>
+        <td class="sg-keppel_dark">$keppel_dark<br>#2b7b80</td>
+        <td class="sg-keppel">$keppel<br>#369AA1</td>
+        <td class="sg-keppel_light">$keppel_light<br>#72b8bd</td>
+        <td class="sg-keppel_lighter">$keppel_lighter<br>#aed6d9</td>
+        <td class="sg-keppel_lightest">$keppel_lightest<br>#eaf4f5</td>
+    </tr>
+</table>
+<h3 class="sg-label">$hibiscus</h3>
+<table class="sg-palette">
+    <tr>
+        <td class="sg-hibiscus_darkest">$hibiscus_darkest<br>#481C1C</td>
+        <td class="sg-hibiscus_darker">$hibiscus_darker<br>#783030</td>
+        <td class="sg-hibiscus_dark">$hibiscus_dark<br>#c04c4c</td>
+        <td class="sg-hibiscus">$hibiscus<br>#F06060</td>
+        <td class="sg-hibiscus_light">$hibiscus_light<br>#f37f7f</td>
+        <td class="sg-hibiscus_lighter">$hibiscus_lighter<br>#f7afaf</td>
+        <td class="sg-hibiscus_lightest">$hibiscus_lightest<br>#fdefef</td>
+    </tr>
+</table>
+<h3 class="sg-label">$birch</h3>
+<table class="sg-palette">
+    <tr>
+        <td class="sg-birch_dark">$birch_dark<br>#151510</td>
+        <td class="sg-birch">$birch<br>#353629</td>
+        <td class="sg-birch_light">$birch_light<br>#5d5e53</td>
+        <td class="sg-birch_light">$birch_lighter<br>#aeaea9</td>
+        <td class="sg-birch_lightest">$birch_lightest<br>#eaeae9</td>
+    </tr>
+</table>
+</section>
+
+<section class="section sg-section">
+<h2 class="sg-subheader">グリッドシステム</h2>
+<p class="sg-intro">レイアウトは 2, 3, 4 カラムに対応しています。いずれもレスポンシブに対応するようになっており、デスクトップで自由にレイアウトを組んでも小さなスクリーンで見た目が調整されます。</p>
+    <h3 class="sg-label">2カラム</h3>
+    <div class="grid grid-half">
+        <div class="col sg-col">1</div>
+        <div class="col sg-col">2</div>
+    </div>
+    <pre><code class="html">&lt;div class="grid grid-half"&gt;
+        &lt;div class="col"&gt; ... &lt;/div&gt;
+        &lt;div class="col"&gt; ... &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    <h3 class="sg-label">2カラム 別版</h3>
+    <div class="grid grid-twothird">
+        <div class="col sg-col">1</div>
+        <div class="col sg-col">2</div>
+    </div>
+    <h3 class="sg-label">スペースなし</h3>
+    <p class="sg-description">カラム間  にスペースが必要ない場合は <code>grid-nospace</code> というクラス名を追加します。2, 3, 4 カラムすべてに対応しています。</p>
+    <div class="grid grid-half grid-nospace">
+        <div class="col sg-col">1</div>
+        <div class="col sg-col">2</div>
+    </div>
+    <pre><code class="html">&lt;div class="grid grid-half grid-nospace"&gt;
+        &lt;div class="col"&gt; ... &lt;/div&gt;
+        &lt;div class="col"&gt; ... &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    <h3 class="sg-label">3カラム</h3>
+    <div class="grid grid-thirds">
+        <div class="col sg-col">1</div>
+        <div class="col sg-col">2</div>
+        <div class="col sg-col">3</div>
+    </div>
+    <pre><code class="html">&lt;div class="grid grid-thirds"&gt;
+        &lt;div class="col"&gt; ... &lt;/div&gt;
+        &lt;div class="col"&gt; ... &lt;/div&gt;
+        &lt;div class="col"&gt; ... &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    <h3 class="sg-label">4カラム</h3>
+    <div class="grid grid-fourth">
+        <div class="col sg-col">1</div>
+        <div class="col sg-col">2</div>
+        <div class="col sg-col">3</div>
+        <div class="col sg-col">4</div>
+    </div>
+    <pre><code class="html">&lt;div class="grid grid-fourth"&gt;
+        &lt;div class="col"&gt; ... &lt;/div&gt;
+        &lt;div class="col"&gt; ... &lt;/div&gt;
+        &lt;div class="col"&gt; ... &lt;/div&gt;
+        &lt;div class="col"&gt; ... &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</section>
+
+<section class="section sg-section">
+<h2 class="sg-subheader">グローバル要素</h2>
+<p class="sg-intro">うどん遍路だけでなく、四国新聞 Web サイト内にある別ページでも使える要素。</p>
+
+<h3 class="sg-label">グローバルナビゲーション</h3>
+<p class="sg-description">四国新聞全体で使えるナビゲーション。jQuery のような JavaScript ライブラリを使用せずにレスポンシブメニューを実装しているので、導入がしやすくなっています。</p>
+<p><img src="./sg/screenshot_globalnav.png" alt="グローバルナビゲーションのスクリーンショット"></p>
+<pre><code class="html">&lt;section class="global-bar"&gt;
+    &lt;h1 id="logo"> ... &lt;/h1&gt;
+    &lt;nav class="global-nav" id="global-nav" role="navigation"&gt;
+        &lt;ul role="navigation"&gt;
+            &lt;li&gt;&lt;a href="#"&gt;ニュース&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt; ... &lt;/li&gt;
+            &lt;li class="responsive-nav"&gt;&lt;a href="javascript:void(0);" onclick="globalnav()">☰&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/section&gt;</code></pre>
+
+<h3 class="sg-label">フッター</h3>
+<p class="sg-description">初期段階では、著作権の文言しかないシンプルな見た目になっていますが、あとでコンテンツを加えてスタイリングすることも可能です。その場合はテキストの色も含めて独自クラス設けて実装してください。</p>
+<p><img src="./sg/screenshot_footer.png" alt="フッターのスクリーンショット"></p><pre><code class="html">&lt;footer&gt;
+    &lt;p&gt; ... &lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+</section>
+
+<section class="section sg-section">
+<h2 class="sg-subheader">独自要素</h2>
+<p class="sg-intro">うどん遍路だけで使われる独自要素がまとまっています。これらは特定の class 名を記述することで見た目を再現することができます。クラス名は独立しており、HTMLの文書構造に依存していません。よって、自由に要素をレイアウトに配置できるだけでなく、別のクラス名を加えることで現存の見た目を拡張いやすくなっています。</p>
+
+<h3 class="sg-label">人気メニュー</h3>
+<p class="sg-description">人気うどんを表示するために利用します。</p>
+<div class="countdown">
+    <h2 class="side-padding"><svg role="image"  class="crown"><use xlink:href="./img/icons.svg#ic_crown" /></svg>人気メニュー</h2>
+    <ol class="countdown-list">
+        <li>かけうどん</li>
+        <li>肉ぶっかけうどん</li>
+        <li>しょうゆうどん</li>
+    </ol>
+</div>
+<pre><code class="html">&lt;section class="countdown"&gt;
+     &lt;h2 class="side-padding"&gt;&lt;svg role="image"  class="crown"&gt;&lt;use xlink:href="./img/icons.svg#ic_crown" /&gt;&lt;/svg&gt;人気メニュー&lt;/h2&gt;
+    &lt;ol class="countdown-list"&gt;
+        &lt;li>かけうどん&lt;/li&gt;
+        ...
+    &lt;/ol&gt;
+&lt;/section&gt;</code></pre>
+
+<h3 class="sg-label">店舗名</h3>
+<p class="sg-description">うどん店名称のスタイリングに使われます。写真を背景に使うため、コントラス比を担保するために白地に影を付けています。</p>
+<h1 class="shop-name">讃岐うどん やなぎ屋 西大浜店</h1>
+<pre><code class="html">&lt;h1 class="shop-name"&gt;讃岐うどん やなぎ屋 西大浜店&lt;/h1&gt;</code></pre>
+
+<h3 class="sg-label">ラベル</h3>
+<p class="sg-description">うどん店の種類を示す際に利用します。通常、うどん店名と隣接して表示されるものです。</p>
+<span class="shop-label">セルフ</span>
+<pre><code class="html">&lt;span class="shop-label"&gt;セルフ&lt;/span&gt;</code></pre>
+
+<h3 class="sg-label">ボタン</h3>
+<p class="sg-description">様々な用途に利用可能なディフォルトボタンのデザインです。HTMLの要素に依存することなく実装することができます。</p>
+<button class="btn">お店のHP</button>
+<pre><code class="html">&lt;a class="btn"&gt;お店のHP&lt;/a&gt;</code></pre>
+
+<h3 class="sg-label">カバー写真</h3>
+<p class="sg-description"><strong>1800px x 1200px</strong> の大きめな写真を使います。現在のスマートフォンのスクリーンは、パソコンより高い解像度が多いです。よって、パソコンとスマートフォンで画像を切り替えることをせず、同じ素材をそれぞれ使います。<br>
+<a href="https://compressor.io/">Compressor.io</a>のようなサイトはファイルサイズ圧縮に便利なツールです。</p>
+<div class="shop-cover"><div class="shop-header"><span class="shop-label">セルフ</span><h1 class="shop-name">セルフうどん　めん吉</h1></div><img src="./img/sample_udon.jpg" alt="店舗名のうどんメニュー"></div>
+<pre><code class="html">&lt;div class="shop-cover"&gt;
+    &lt;div class="shop-header"&gt;
+        &lt;span class="shop-label""&gt;セルフ&lt;/span&gt;
+        &lt;h1 class="shop-name"&gt;店舗名&lt;/h1&gt;
+    &lt;/div&gt;
+   &lt;img src="./img/sample.jpg" alt="店舗名のうどんメニュー"&gt;
+&lt;/div&gt;</code></pre>
+
+<h3 class="sg-label">地図</h3>
+<p class="sg-description">地図は <a href="https://developers.google.com/maps/documentation/static-maps/">Google Maps API </a>を利用して、静止画像を表示しています。パフォーマンスの向上と、スマートフォンなど小さな画面での誤操作を防ぐために静止画を選んでいます。クリックすると Google Maps へ移動します。<br>
+コードに住所を記入するだけで指定位置にピンが入った地図が表示されます。</p>
+<a href="https://www.google.co.jp/?q=香川県高松市中野町15番1号&zoom=17"><img src="https://maps.googleapis.com/maps/api/staticmap?center=香川県高松市中野町15番1号&zoom=17&size=640x320&markers=color:0xF06060%7C香川県高松市中野町15番1号&key=AIzaSyBkPbWWsuEG30UC7vLkm2nP_H8Ix_cbXE0&style=feature:administrative.country%7Celement:geometry%7Ccolor:0x060606&style=feature:administrative.locality%7Celement:geometry.stroke%7Ccolor:0xff0000&style=feature:administrative.locality%7Celement:labels.text%7Cweight:0.39&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xd4001a&style=feature:administrative.locality%7Celement:labels.text.stroke%7Ccolor:0xae8989%7Clightness:87%7Cgamma:3.68%7Cweight:3.15&style=feature:administrative.province%7Celement:geometry%7Ccolor:0x43706d%7Cweight:0.82&style=feature:administrative.province%7Celement:labels.text%7Ccolor:0x76a000%7Clightness:28%7Cgamma:0.61%7Cweight:0.43&style=feature:landscape.natural%7Celement:geometry.fill%7Ccolor:0xebebeb&style=feature:poi%7Celement:geometry%7Ccolor:0xe5dfdf&style=feature:poi.park%7Celement:geometry%7Ccolor:0xf0f0f0&style=feature:road.arterial%7Celement:labels.text.stroke%7Ccolor:0xe3e1bf&style=feature:road.highway%7Celement:geometry%7Ccolor:0xff761e%7Cgamma:1.61&style=feature:road.highway%7Celement:geometry.fill%7Ccolor:0xffa600&style=feature:road.highway%7Celement:geometry.stroke%7Ccolor:0xa9ff00"></a>
+<pre><code class="html">&lt;a href="Google Maps へのリンク"&gt;&lt;img src="https://maps.googleapis.com/ma</code></pre>
+
+<h3 class="sg-label">開閉UI（スマホのみ）</h3>
+<p class="sg-description">コンテンツが間延びしてしまいがちのテーブル組みのコンテンツはスマホでは開閉式のインターフェイスに切り替わります。項目名が書かれている<code>toggle</code>ボタン要素のすぐあとにコンテンツが入る<code>toggle-panel</code>を続けて記述してください。</p>
+<button class="toggle">項目 1</button>
+<div class="toggle-panel">
+  <p>吾輩の主人は滅多めったに吾輩と顔を合せる事がない。職業は教師だそうだ。学校から帰ると終日書斎に這入ったぎりほとんど出て来る事がない。家のものは大変な勉強家だと思っている。当人も勉強家であるかのごとく見せている。しかし実際はうちのものがいうような勤勉家ではない。</p>
+</div>
+<pre><code class="html">&lt;button class="toggle"&gt;&lt;/button&gt;
+&lt;div class="toggle-panel"&gt;
+...
+&lt;/div&gt;</code></pre>
+
+<h3 class="sg-label">My Kagawa ボックス</h3>
+
+<section class="section">
+   <section class="mykagawa">
+        <h2 class="mykagawa-header"><span>一緒に行きたい、おすすめコース</span><span class="course">善通寺ICからすぐ！の人気うどん店 ６時間で５店舗制覇ツアー</span></h2>
+        <div class="mykagawa-item">
+            <div class="mykagawa-photo"><img src="./img/sample_store2.jpg" alt="しこしこうどん　百こ萬"></div>
+            <p>しこしこうどん　百こ萬</p>
+        </div>
+        <div class="mykagawa-item">
+            <div class="mykagawa-photo"><img src="./img/sample_store2.jpg" alt="しこしこうどん　百こ萬"></div>
+            <p>第75番札所　総本山　善通寺</p>
+        </div>
+        <div class="mykagawa-item">
+            <div class="mykagawa-photo"><img src="./img/sample_store2.jpg" alt="しこしこうどん　百こ萬"></div>
+            <p>山下うどん</p>
+        </div>
+        <div class="mykagawa-button"><a href="#">うどん県旅ネットのおすすめコース<svg role="image"><use xlink:href="./img/icons.svg#ic_arrow_side" /></svg></a></div>
+    </section>
+</section>
+
+<pre><code class="html">&lt;section class="mykagawa"&gt;
+    &lt;h2 class="mykagawa-header"&gt; &lt;span&gt;一緒に行きたい、おすすめコース&lt;/span&gt;&lt;span class="course"&gt;コース名&lt;/span&gt;&lt;/h2&gt;
+    &lt;div class="mykagawa-item"&gt;
+    ...
+    &lt;/div&gt;
+    &lt;div class="mykagawa-button"&gt;&lt;a href="#"&gt;コースへのリンク&lt;/a&gt;&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+
+
+</section>
+</div>
+
+<footer><p>Copyright &copy; 2000-2017 <br>
+THE SHIKOKU SHIMBUN. All Rights Reserved.  </p></footer>
+</body>
+</html>

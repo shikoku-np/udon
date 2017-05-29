@@ -1,0 +1,118 @@
+@import '../sass/variables';
+
+.sg-header {
+    margin: 0;
+    padding: 1rem;
+    border-bottom: 1px solid $udon_dark;
+    color: $keppel;
+    font-size: 2rem;
+    line-height: 1;
+    @include mq(lg) {
+            padding: 2rem 2.5rem;
+    }
+}
+.sg-subheader{
+    color: $keppel_light;
+    font-size: 1.5rem;
+}
+.sg-label{
+    color: $olive;
+    font-size: 1.5rem;
+}
+.sg-intro{
+    margin-bottom: 2rem;
+}
+.sg-description{
+    margin-bottom: 1rem;
+    &:after{
+        display: block;
+        margin: 1rem 0 0 0;
+        clear: both;
+        content:('・　・　・');
+        text-align: center;
+    }
+}
+
+.sg-section {
+    margin: 0;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid $udon_dark;
+    @include mq(md) {
+            padding: 2rem 1.5rem 2rem 1.5rem;
+    }
+    @include mq(lg) {
+            padding: 2rem 2.5rem 2rem 2.5rem;
+    }
+}
+
+.sg-col{
+    height: 4rem;
+    padding-top: 1rem;
+    background: rgba(0,0,0,0.1);
+    text-align: center;
+    @include mq(lg) {
+            background: rgba(0,0,0,0.2);
+    }
+}
+
+/* Color Palettes  */
+.sg-palette{
+    width: 100%;
+    margin: 0 0 2rem 0;
+    td{
+        display: block;
+        padding: 0.5rem;
+        font-family: $font-numeric;
+        font-size: 0.8rem;
+        text-align:center;
+        @include mq(lg) {
+            display: table-cell;
+        }
+    }
+}
+.sg-udon_darkest{ background: $udon_darkest; } 
+.sg-udon_darker{ background: $udon_darker; } 
+.sg-udon_dark{ background: $udon_dark; } 
+.sg-udon{ background: $udon; } 
+.sg-udon_light{ background: $udon_light; } 
+.sg-udon_lightest{ background: $udon_lightest; } 
+.sg-shikoku_darkest{ background: $shikoku_darkest; } 
+.sg-shikoku_darker{ background: $shikoku_darker; } 
+.sg-shikoku_dark{ background: $shikoku_dark; } 
+.sg-shikoku{ background: $shikoku; } 
+.sg-shikoku_light{ background: $shikoku_light; } 
+.sg-shikoku_lighter{ background: $shikoku_lighter; } 
+.sg-shikoku_lightest{ background: $shikoku_lightest; } 
+.sg-olive_darkest{ background: $olive_darkest; } 
+.sg-olive_darker{ background: $olive_darker; } 
+.sg-olive_dark{ background: $olive_dark; } 
+.sg-olive{ background: $olive; } 
+.sg-olive_light{ background: $olive_light; } 
+.sg-olive_lighter{ background: $olive_lighter; } 
+.sg-olive_lightest{ background: $olive_lightest; }
+.sg-keppel_darkest{ background: $keppel_darkest; } 
+.sg-keppel_darker{ background: $keppel_darker; } 
+.sg-keppel_dark{ background: $keppel_dark; } 
+.sg-keppel{ background: $keppel; } 
+.sg-keppel_light{ background: $keppel_light; } 
+.sg-keppel_lighter{ background: $keppel_lighter; } 
+.sg-keppel_lightest{ background: $keppel_lightest; }
+.sg-hibiscus_darkest{ background: $hibiscus_darkest; } 
+.sg-hibiscus_darker{ background: $hibiscus_darker; } 
+.sg-hibiscus_dark{ background: $hibiscus_dark; } 
+.sg-hibiscus{ background: $hibiscus; } 
+.sg-hibiscus_light{ background: $hibiscus_light; } 
+.sg-hibiscus_lighter{ background: $hibiscus_lighter; } 
+.sg-hibiscus_lightest{ background: $hibiscus_lightest; }
+.sg-birch_dark{ background: $birch_dark; } 
+.sg-birch{ background: $birch; } 
+.sg-birch_light{ background: $birch_light; } 
+.sg-birch_lighter{ background: $birch_lighter; } 
+.sg-birch_lightest{ background: $birch_lightest; }
+
+/* highlighter.js modifier  */
+.hljs {
+    margin-bottom: 4rem;
+    word-wrap: break-word;
+    overflow-x: auto;
+}
