@@ -15,6 +15,7 @@ gulp.task('workflow', function () {
       autoprefixer: {browsers: 'last 2 versions', add: true}
     }))
     .pipe(concat('udon.min.css'))
+    .pipe(concat('print.min.css'))
     .pipe(gulp.dest('./dst/css/'))
 
   gulp.src('./src/sg/*.scss')

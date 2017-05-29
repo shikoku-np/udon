@@ -1,0 +1,71 @@
+@import "variables";
+
+/*
+INDEX
+
+A. HTML Foundation
+B. Basic Typography
+C. Text Modifier
+D. Global Components
+E. Layout System
+F. Components
+G. Parts
+H. My Kagawa
+I. Adustments
+J. Print Specific
+
+Property Order
+1. Box
+        display
+        flex
+        position
+        top
+        right
+        bottom
+        left
+        height
+        width
+        margin
+        padding
+        opacity
+        overflow
+        visibility
+        z-index
+2. Border
+3. Background
+4. Font/Text
+        alphabetically
+5. List
+6. Transform
+7. Transition
+8. Other
+*/
+
+/* A. HTML Foundation */
+html {
+  font-family: $font-sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  max-width: 100%;
+  background-color: $white !important;
+  color: $birch;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+a:link, a:visited, a {
+  background: transparent;
+  font-weight: bold;
+  text-decoration: underline;
+  page-break-inside:avoid;
+  &[href^=http]:after{
+    content:" &lt; " attr(href) "&gt; ";
+  }
+}
+img{
+  border-style: none;
+}
+
+/* J. Print Specific */
+@page { margin: 2cm }
